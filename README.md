@@ -64,8 +64,10 @@ Analytics needed:
 - Ratio analytics: Doctor to population ratio by geography 
 - Correlation analytics: Income level vs healthcare accessibility and quality 
 
-This solution will be built into a dashboard () that supports filtering to provide analytics across different locations
-  - ![Information Architecture Diagram](path_to_image)
+<img width="891" height="227" alt="Screenshot 2026-06-24 at 7 12 45 PM" src="https://github.com/user-attachments/assets/39d8a320-ef32-477e-ac16-db8de850fb3c" />
+
+
+
 
 ### 2. Data Architecture
 Sources: RateMD doctor ratings data that has the fields with their id, name, speciality, rating average, rating count, rating regarding their helpfulness, punctuality and knowledge. We will also utilize information about their practice location with postal code, city and province. The data also covers doctors in Markham and Toronto but in this solution we will be using U.S. Census data so we will filter out doctors not based in the U.S. 
@@ -92,6 +94,8 @@ Ingestion: Stream the file using the public link and then organizes each complet
 ### 4. Product Architecture
 - Provide an overview of the product's overall structure.
 - Include any major components and how they interact.
+<img width="722" height="178" alt="Screenshot 2026-06-24 at 7 12 49 PM" src="https://github.com/user-attachments/assets/151104cc-7609-4d56-a11e-78ec11a5275b" />
+
 
 ## D. Modeling
 
