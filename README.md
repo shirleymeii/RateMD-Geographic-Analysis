@@ -67,33 +67,18 @@ Analytics needed:
 <img width="891" height="227" alt="Screenshot 2026-06-24 at 7 12 45 PM" src="https://github.com/user-attachments/assets/39d8a320-ef32-477e-ac16-db8de850fb3c" />
 
 
-
-
 ### 2. Data Architecture
-Sources: RateMD doctor ratings data that has the fields with their id, name, speciality, rating average, rating count, rating regarding their helpfulness, punctuality and knowledge. We will also utilize information about their practice location with postal code, city and province. The data also covers doctors in Markham and Toronto but in this solution we will be using U.S. Census data so we will filter out doctors not based in the U.S. 
-Ingestion: Stream the file using the public link and then organizes each complete doctor record at a time. It will then be flattened with the location, rating and doctor information fields and stored
+Sources: RateMD doctor ratings data that has the fields with their ID, name, speciality, rating average, rating count, rating regarding their helpfulness, punctuality, and knowledge. We will also utilize information about their practice location with postal code, city and province. The data also covers doctors in Markham and Toronto, but for this solution, we will use U.S. Census data, so we will filter out doctors not based in the U.S. 
+Ingestion: Stream the file via the public link, then process each complete doctor record one at a time. It will then be flattened with the location, rating, and doctor information fields and stored
 
-  - ![Data Architecture Diagram](path_to_image)
+<img width="990" height="257" alt="Screenshot 2026-06-25 at 5 59 31 PM" src="https://github.com/user-attachments/assets/e5bd061b-faad-4d19-acb6-483d33310182" />
 
-#### Medallion Architecture (if applicable)
 
-- Stages:
-  - **Bronze**: Extracting all the doctor information from the json data into a raw storage center with the fields sorted out. Once sorted out I have the information separated by each individual field by the doctor id. 
-  - **Silver**: Cleaned, conformed, and enriched data.
-  - **Gold**: Aggregated, business-ready data for analytics and reporting.
-- Include a diagram if helpful.
-  - ![Medallion Architecture Diagram](path_to_image)
+### 3. Technical Architecture<img width="987" height="264" alt="Screenshot 2026-06-25 at 5 58 37 PM" src="https://github.com/user-attachments/assets/f8f4c3f1-a95d-440f-9f7f-59da310bc29f" />
 
-### 3. Technical Architecture
-- Define the software and hardware systems involved in the project.
-- List any key technologies, tools, or platforms used. 
-  - Example: 
-    - Python for data analysis
-    - Azure for cloud computing
+<img width="722" height="178" alt="Screenshot 2026-06-24 at 7 12 49 PM" src="https://github.com/user-attachments/assets/47f42a37-f6b2-495f-858c-c08f3e2477b0" />
 
 ### 4. Product Architecture
-- Provide an overview of the product's overall structure.
-- Include any major components and how they interact.
 <img width="722" height="178" alt="Screenshot 2026-06-24 at 7 12 49 PM" src="https://github.com/user-attachments/assets/151104cc-7609-4d56-a11e-78ec11a5275b" />
 
 
