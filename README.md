@@ -75,8 +75,8 @@ Ingestion: Stream the file via the public link, then process each complete docto
 
 
 ### 3. Technical Architecture<img width="987" height="264" alt="Screenshot 2026-06-25 at 5 58 37 PM" src="https://github.com/user-attachments/assets/f8f4c3f1-a95d-440f-9f7f-59da310bc29f" />
+<img width="722" height="178" alt="Screenshot 2026-06-24 at 7 12 49 PM" src="https://github.com/user-attachments/assets/7326948c-ffbd-442f-9016-5a18c67ca3f7" />
 
-<img width="722" height="178" alt="Screenshot 2026-06-24 at 7 12 49 PM" src="https://github.com/user-attachments/assets/47f42a37-f6b2-495f-858c-c08f3e2477b0" />
 
 ### 4. Product Architecture
 <img width="722" height="178" alt="Screenshot 2026-06-24 at 7 12 49 PM" src="https://github.com/user-attachments/assets/151104cc-7609-4d56-a11e-78ec11a5275b" />
