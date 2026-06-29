@@ -84,14 +84,75 @@ Ingestion: Stream the file via the public link, then process each complete docto
 
 ## D. Modeling
 
-### 1. Dimensional Modeling
-- Explain the dimensional modeling
-- Example:
-  - **Facts**: describe all the facts
-  - **Dimension**: include all dimensions
+For this project we use a star schema — the standard dimensional model for
+analytics. A single central fact table holds the measurable values (the doctor
+ratings), and it is surrounded by dimension tables that hold the descriptive
+context (the doctor, their location, and their specialty). The fact table links to
+each dimension through a foreign key. This structure is what makes the analysis fast
+and intuitive: we can slice the ratings by any dimension and drill down through
+geography (zip → county → state) to answer the project's questions.
 
-*Include any necessary images or diagrams to clarify the architecture.*
-  - ![Dimensional Modeling Diagram](path_to_image)
+The model is built around a clear grain: each row in the fact table represents
+one doctor. Counting rows in the fact table therefore counts doctors, which is
+what powers the "doctors per population" metric when combined with the population
+figures stored in the geography dimension.
+
+Fact Table
+
+fact_doctor_rating — grain: one row per doctor.
+
+
+Primary key: fact_rating_id
+Measures: avg_rating, review_count, punctuality_rating,
+helpfulness_rating, knowledge_rating
+Foreign keys: doctor_id, geography_id, specialty_id
+
+
+The measures are the numeric ratings we analyze. The foreign keys connect each
+rating record to its descriptive dimensions.
+
+Dimension Tables
+
+dim_doctor — describes the individual physician.
+
+
+doctor_id (PK), canonical_name
+Holds the cleaned, fuzzy-matched doctor identity. The canonical_name is the
+standardized name produced after de-duplicating near-identical entries
+(e.g. "Dr. John Smith" and "John Smith MD").
+
+
+dim_geography — describes the practice location and is the link to Census data.
+
+
+geography_id (PK), zip_code, city, county, state, population, income
+This is the conformed dimension that joins the RateMD ratings to U.S. Census
+population and income. It carries the zip → county → state hierarchy, which enables
+the drill-down requirement and the doctors-per-population analysis.
+
+
+dim_specialty — describes the medical specialty.
+
+
+specialty_id (PK), specialty_name, specialty_group
+Lets us analyze ratings and doctor supply by specialty, and group related
+specialties together (e.g. grouping sub-fields under a broader category).
+
+
+How the model answers the requirements
+
+
+Doctor rating analysis → the measures in fact_doctor_rating.
+Doctors per population → count of fact rows joined to population in
+dim_geography.
+Filter/drill down by zip, county, state → the geography hierarchy in
+dim_geography.
+Specialty analysis → dim_specialty.
+
+
+Field-type markers in the diagram: # = numeric, = = text, 🔑 = primary key,
+↗ = foreign key.
+
 
 ## E. Methodology and Implementation
 Describe the methodology used in the project and the steps followed during implementation.
