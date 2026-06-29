@@ -153,6 +153,8 @@ Specialty analysis → dim_specialty.
 Field-type markers in the diagram: # = numeric, = = text, 🔑 = primary key,
 ↗ = foreign key.
 
+<img width="1275" height="741" alt="star_schema_v2" src="https://github.com/user-attachments/assets/86d45061-a1db-4152-baeb-53192efedb49" />
+
 
 ## E. Methodology and Implementation
 Describe the methodology used in the project and the steps followed during implementation.
