@@ -170,9 +170,23 @@ than sequentially.
 ## F. Visualization
 Provide details of the visualizations created for the project.
 
-- Include charts, graphs, and any other visual representation of the data.
-  - ![Visualization Example](path_to_image)
-- Mention any libraries or tools used for visualization (e.g., Matplotlib, Power BI).
+This project produced two Tableau visualizations analyzing doctor availability and quality across U.S. states.
+
+**Visual 1 — Doctor Density Map:** A choropleth map of the U.S. shading each state by its total number of doctors, with a State → County → Zip drill-down hierarchy. Reveals where physicians are geographically concentrated (California, New York, and Texas hold the most).
+
+**Visual 2 — Average Rating by State:** A horizontal bar chart of average doctor rating per state, filtered to reviewed doctors only and limited to the top 10 highest-rated states.
+
+**Tool used:** Tableau Cloud, connected live to the Snowflake data warehouse.
+
+**Tableau links:**
+- Doctor Density Map:
+
+<img width="1728" height="877" alt="Screenshot 2026-07-07 at 9 52 17 AM" src="https://github.com/user-attachments/assets/e2a485db-73d6-47d0-bc7f-b9e1efe42ba5" />
+
+- Average Rating by State:
+
+  <img width="1728" height="483" alt="Screenshot 2026-07-07 at 9 52 56 AM" src="https://github.com/user-attachments/assets/7e492ba8-daed-4738-adc3-f25733d9e7f9" />
+
 
 ## G. Insights
 Highlight any key insights gained from the project.
