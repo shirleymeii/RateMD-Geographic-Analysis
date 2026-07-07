@@ -10,20 +10,17 @@ In the project we will analyze doctor ratings on RateMD to identify patterns acr
 We can also evaluate income levels in these geographic locations and compare it to the average physician rating and physicians available. We can explore whether income in geographic locations affect physician access and quality. This project will help in enabling decision making in opening public clinics and facilities.
 
 
-This project will 
 ## B. Requirements
 
 ### 1. Requirements Analysis
 - Business Personas
   - Government Healthcare Officials: Identify undeserved communities and regions and record gaps in quality and accessible healthcare
-  - Healthcare Physicians: Those looking to open a practice can identify where there may be a lack of accessible healthcare for specialities in certain areas. This can be a business opportunity for them 
+  - Healthcare Physicians: Those looking to open a practice can identify where there may be a lack of accessible healthcare for specialties in certain areas. This can be a business opportunity for them 
   - Patients: Patients or families who may need more specialized medical attention when looking for places to move to can utilize the dashboard to see where there is more healthcare accessibility suitable for them
 
 - Risks
-  - Data Quality Issues: There may duplicate doctor entries with the name slightly mispelled
+  - Data Quality Issues: There may be duplicate doctor entries with the name slightly misspelled
   - Rating Bias: Online reviews can be fabricated or biased
-
-- Costs
  
 - Timeline
   June 14th, 2026   Requirements Gathering, Cost, Benefits, Risks, Architecture
@@ -44,7 +41,7 @@ This project will
 ### 3. Functional Requirements
 - Doctor Rating Analysis: Analyze doctor ratings from RateMD across average rating, number of reviews 
 - Fuzzy Matching Pipeline must use fuzzy name matching to remove duplicates and standardize doctor names for data accuracy
-- Geographic Analysis: Calculate and display the ratio of doctors in a county/state in proportion to the population. Further analyze income levels and number and quality of healthcare professionals
+- Geographic Analysis: Calculate and display the ratio of doctors in a county/state in proportion to the population. Further analyze income levels, the number and the quality of healthcare professionals
 - Drill Down Reporting: Users should be able to toggle between county, state and zip code
 
 ### 4. Data Requirements
