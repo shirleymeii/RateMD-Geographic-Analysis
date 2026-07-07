@@ -201,11 +201,14 @@ The core finding from the analysis: doctor quantity does not equal doctor qualit
 ## H. Conclusion
 Summarize the outcomes of the project and any potential next steps.
 
-- What was achieved?
-- How can the results be used moving forward?
-- Example:
-  - The project successfully reduced costs by 20% through process automation.
-  - Future work may include expanding the solution to new departments.
+This project delivered a working analytics pipeline that answers two questions about U.S. healthcare: how good are the doctors, and are there enough of them relative to population.
+
+**What was achieved.** We combined ~1.78 million RateMDs doctor-rating records with U.S. Census population and income data in a Snowflake data warehouse, modeled around a star schema (fact_doctor_rating surrounded by dim_doctor, dim_geography, and dim_specialty). On top of that we built Tableau visualizations: a doctor-density map with State → County → Zip drill-down, a top-10 average-rating-by-state chart, and a doctors-per-population availability metric. The result is a set of views that let a user evaluate both the quality and the availability of physicians, filterable by state, county, and zip.
+
+**Key outcome.** The analysis showed that doctor quantity does not equal doctor quality — the states with the most doctors (California, New York, Texas) are not the highest-rated, while smaller states like Utah, Idaho, and New Jersey lead on ratings. Availability and quality are separate signals and both have to be measured.
+
+**How the results can be used moving forward.** The dashboard supports real decisions: health officials can spot underserved areas for new clinic placement, physicians can identify regions lacking coverage in their specialty, and patients can compare healthcare access across locations. Future work could extend the analysis to income-vs-quality correlation, add specialty-level breakdowns, and incorporate more recent Census releases as they become available.
+
 
 ## I. References
 - Provide a list of all references used in the project, formatted according to MLA style.
