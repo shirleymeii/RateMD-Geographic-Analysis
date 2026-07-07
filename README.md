@@ -192,7 +192,7 @@ The core finding from the analysis: doctor quantity does not equal doctor qualit
 
 **Most doctors ≠ highest rated.** The states with the largest number of doctors — California, New York, and Texas — are not the highest-rated. Those states sit mid-pack on average rating, while smaller states like Utah, Idaho, and New Jersey lead in quality. A larger physician supply does not translate to better-reviewed care.
 
-**Rating scale.** Ratings in this dataset run on a roughly 0–1.3 raw scale. After filtering out doctors with zero reviews (which were dragging averages down), the meaningful comparison sits on a ~0–4 scale.
+**Rating scale and the zero-rating exclusion.** Ratings in this dataset run on a roughly 0–1.3 raw scale. Doctors with an average rating of 0 were deliberately excluded from the analysis, because a 0 does not mean a doctor was rated poorly — it means the doctor had no reviews at all. Leaving them in was pulling the state averages down artificially and made good states look worse than they are. After removing the zero-review doctors, the meaningful comparison sits on a ~0–4 scale.
 
 **Availability vs. quality are separate questions.** Combining the doctor-density map with the doctors-per-population ratio and the rating chart shows that a region can have many doctors, few doctors per capita, and mediocre ratings all at once — meaning "enough doctors" and "good doctors" have to be measured independently, which is exactly what the two visuals do.
 
