@@ -191,10 +191,15 @@ This project produced two Tableau visualizations analyzing doctor availability a
 ## G. Insights
 Highlight any key insights gained from the project.
 
-- Provide an overview of what was learned or discovered through data analysis.
-- Example:
-  - High correlation between customer satisfaction and response time.
-  - Significant opportunity for cost reduction in supply chain operations.
+The core finding from the analysis: doctor quantity does not equal doctor quality.
+
+**Most doctors ≠ highest rated.** The states with the largest number of doctors — California, New York, and Texas — are not the highest-rated. Those states sit mid-pack on average rating, while smaller states like Utah, Idaho, and New Jersey lead in quality. A larger physician supply does not translate to better-reviewed care.
+
+**Rating scale.** Ratings in this dataset run on a roughly 0–1.3 raw scale. After filtering out doctors with zero reviews (which were dragging averages down), the meaningful comparison sits on a ~0–4 scale.
+
+**Availability vs. quality are separate questions.** Combining the doctor-density map with the doctors-per-population ratio and the rating chart shows that a region can have many doctors, few doctors per capita, and mediocre ratings all at once — meaning "enough doctors" and "good doctors" have to be measured independently, which is exactly what the two visuals do.
+
+**Why it matters.** For the project's stated users (health officials planning clinics, physicians choosing where to practice), this means raw doctor counts alone are misleading. Availability relative to population and rating quality both need to be on the map before any decision.
 
 ## H. Conclusion
 Summarize the outcomes of the project and any potential next steps.
