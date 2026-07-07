@@ -30,13 +30,13 @@ We can also evaluate income levels in these geographic locations and compare it 
   
 - Benefits
   - Identifies geographic areas with disproportionate healthcare accessibility and quality
-  - Analyzes which specialities have higher ratings and which have lower ratings 
+  - Analyzes which specialties have higher ratings and which have lower ratings 
   - Aid in policy planning and healthcare facility management
 
 ### 2. Business Requirements
-- Compare doctor ratings from RateMDs and identify patterns for high rated physicians
-- Determine whether there is an adequate number of doctors in a geographic area by referencing it with population number
-- Make information filterable by zip code, county and state 
+- Compare doctor ratings from RateMDs and identify patterns for high-rated physicians
+- Determine whether there is an adequate number of doctors in a geographic area by referencing it with the population number
+- Make information filterable by zip code, county, and state 
 
 ### 3. Functional Requirements
 - Doctor Rating Analysis: Analyze doctor ratings from RateMD across average rating, number of reviews 
@@ -59,24 +59,27 @@ Business processes supported:
 Analytics needed:
 - Quality analytics that describe a doctor's average rating, rating count
 - Ratio analytics: Doctor to population ratio by geography 
-- Correlation analytics: Income level vs healthcare accessibility and quality 
+- Correlation analytics: healthcare accessibility and quality 
 
-<img width="891" height="227" alt="Screenshot 2026-06-24 at 7 12 45 PM" src="https://github.com/user-attachments/assets/39d8a320-ef32-477e-ac16-db8de850fb3c" />
+<img width="681" height="175" alt="Screenshot 2026-07-07 at 6 40 12 PM" src="https://github.com/user-attachments/assets/ef6ddacb-1f9b-405e-9d4f-b98d0a7f1632" />
+
 
 
 ### 2. Data Architecture
-Sources: RateMD doctor ratings data that has the fields with their ID, name, speciality, rating average, rating count, rating regarding their helpfulness, punctuality, and knowledge. We will also utilize information about their practice location with postal code, city and province. The data also covers doctors in Markham and Toronto, but for this solution, we will use U.S. Census data, so we will filter out doctors not based in the U.S. 
+Sources: RateMD doctor ratings data that has the fields with their ID, name, speciality, rating average, rating count, rating regarding their helpfulness, punctuality, and knowledge. We will also utilize information about their practice location with postal code, city, and province. The data also covers doctors in Markham and Toronto, but for this solution, we will use U.S. Census data, so we will filter out doctors not based in the U.S. 
 Ingestion: Stream the file via the public link, then process each complete doctor record one at a time. It will then be flattened with the location, rating, and doctor information fields and stored
 
 <img width="990" height="257" alt="Screenshot 2026-06-25 at 5 59 31 PM" src="https://github.com/user-attachments/assets/e5bd061b-faad-4d19-acb6-483d33310182" />
 
 
 ### 3. Technical Architecture<img width="987" height="264" alt="Screenshot 2026-06-25 at 5 58 37 PM" src="https://github.com/user-attachments/assets/f8f4c3f1-a95d-440f-9f7f-59da310bc29f" />
-<img width="722" height="178" alt="Screenshot 2026-06-24 at 7 12 49 PM" src="https://github.com/user-attachments/assets/7326948c-ffbd-442f-9016-5a18c67ca3f7" />
+<img width="838" height="212" alt="Screenshot 2026-07-07 at 6 39 04 PM" src="https://github.com/user-attachments/assets/900160c4-3c6a-4557-91dc-9e7c2bb73a59" />
+
 
 
 ### 4. Product Architecture
-<img width="722" height="178" alt="Screenshot 2026-06-24 at 7 12 49 PM" src="https://github.com/user-attachments/assets/151104cc-7609-4d56-a11e-78ec11a5275b" />
+<img width="838" height="212" alt="Screenshot 2026-07-07 at 6 39 04 PM" src="https://github.com/user-attachments/assets/9d872243-1f54-4ca3-9515-72cffb7fa98d" />
+
 
 
 ## D. Modeling
