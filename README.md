@@ -213,6 +213,9 @@ This project delivered a working analytics pipeline that answers two questions a
 ## I. References
 - Provide a list of all references used in the project, formatted according to MLA style.
 
+  1. RateMDs. *RateMDs — Doctor Reviews and Ratings*, RateMDs Inc., 2026, https://www.ratemds.com.
+  2. Snowflake Inc. *Snowflake Documentation*, Snowflake Inc., 2026, https://docs.snowflake.com.
+
 1. Author Last Name, First Name. *Title of Book*. Publisher, Year.
 2. "Title of Article." *Name of Journal*, vol. 1, no. 1, Year, pp. 1-10.
 3. *Title of Website*. Website Publisher, Year, URL.
