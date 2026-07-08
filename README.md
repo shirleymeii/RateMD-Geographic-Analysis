@@ -186,7 +186,8 @@ This project produced two Tableau visualizations analyzing doctor availability a
 
 - Average Rating by State:
 
-  <img width="1728" height="483" alt="Screenshot 2026-07-07 at 9 52 56 AM" src="https://github.com/user-attachments/assets/7e492ba8-daed-4738-adc3-f25733d9e7f9" />
+  <img width="1353" height="919" alt="Screenshot 2026-07-08 at 7 05 26 PM" src="https://github.com/user-attachments/assets/389fe8e0-c804-40f6-b169-632f8fdc0249" />
+
 
   - Top 10 U.S. States with the Lowest Doctor Density
  <img width="1407" height="906" alt="Top 10 U S  States with Most Doctors" src="https://github.com/user-attachments/assets/5426b91c-b70e-44d8-9ea2-94d179adec9c" />
