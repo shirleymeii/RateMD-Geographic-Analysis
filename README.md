@@ -155,6 +155,9 @@ Field-type markers in the diagram: # = numeric, = = text, 🔑 = primary key,
 
 <img width="1275" height="741" alt="star_schema_v2" src="https://github.com/user-attachments/assets/86d45061-a1db-4152-baeb-53192efedb49" />
 
+Update dimensional model schema attributes
+Updated the star schema to better support the project’s business and functional requirements. Added missing fields such as accepting_patients, specialty_id, and location_category to dim_doctor; added staff_rating and source_doctor_id to fact_doctor_rating; and expanded dim_geography with county_population, state_abbr, state_population, and zip_population. Removed fields such as income where Snowflake did not provide usable data. These updates improve support for doctor rating analysis, specialty analysis, and population-based geographic comparisons.
+
 
 ## E. Methodology and Implementation
 For the project, we used Visual Studio Code for our ETL process for both datasets. We extracted the review data from the dataset provided by the professor, and we used pandas to read the file and understand the columns provided. From there, we dropped the columns not needed and cleaned the data to only represent doctors in the U.S., as it contained data in Canada as well. We used fuzzy matching to ensure that doctors who were likely the same but misspelled slightly differently were recognized as the same. We then had to build out the dimensional tables on Snowflake and load the data there as well. We followed the same process for the population data and uploaded our cleaned data storage back onto our Azure container. From there, we ensured our data was properly exported into Snowflake and connected it to Tableau where we built our visualizations. 
