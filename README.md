@@ -157,13 +157,7 @@ Field-type markers in the diagram: # = numeric, = = text, 🔑 = primary key,
 
 
 ## E. Methodology and Implementation
-Describe the methodology used in the project and the steps followed during implementation.
-
-This project was developed using an Agile, sprint-based methodology, organized
-around the course milestones. Each sprint produced a working deliverable that the
-next sprint built upon, allowing the three team members to work in parallel rather
-than sequentially.
-
+For the project, we used Visual Studio Code for our ETL process for both datasets. We extracted the review data from the dataset provided by the professor, and we used pandas to read the file and understand the columns provided. From there, we dropped the columns not needed and cleaned the data to only represent doctors in the U.S., as it contained data in Canada as well. We used fuzzy matching to ensure that doctors who were likely the same but misspelled slightly differently were recognized as the same. We then had to build out the dimensional tables on Snowflake and load the data there as well. We followed the same process for the population data and uploaded our cleaned data storage back onto our Azure container. From there, we ensured our data was properly exported into Snowflake and connected it to Tableau where we built our visualizations. 
 
 
 
