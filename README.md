@@ -48,6 +48,12 @@ We can also evaluate income levels in these geographic locations and compare it 
 - RateMD Data: 
 - US Census Data that provides population count and income information by zip code, county and state level
 
+
+### Requirement Traceability
+
+Each business and functional requirement was addressed through the final analytics solution. Doctor ratings were analyzed using state and specialty visualizations, physician availability was evaluated using population-adjusted metrics, and geographic accessibility was explored through interactive drill-downs from state to county and ZIP code. Together, these components provide a comprehensive view of physician quality and healthcare accessibility across the United States.
+
+
 ## C. Architecture
 
 ### 1. Information Architecture
@@ -170,6 +176,9 @@ A calculated feild was created in order to make the Doctors per 100K visualizati
 Explain the formula:
 Doctors per 100K = doctor count / population × 100,000
 
+
+
+
 ## F. Visualization
 Provide details of the visualizations created for the project.
 
@@ -211,6 +220,7 @@ A horizontal bar chart measuring physician availability by calculating the numbe
 <img width="980" height="711" alt="Screenshot 2026-07-09 at 10 11 22 AM" src="https://github.com/user-attachments/assets/991940a2-9b2d-4952-a8a7-3da457805a34" />
 
 
+
 ## G. Insights
 Highlight any key insights gained from the project.
 
@@ -230,6 +240,9 @@ The core finding from the analysis: doctor quantity does not equal doctor qualit
 
 **Doctor availability varies across states.** The doctors-per-100K visualization shows that physician availability differs by state after adjusting for population. This helps identify states with relatively higher or lower access to doctors, but it does not automatically prove whether a state has “enough” doctors without a medical benchmark.
 
+### Analytical Assumptions and Limitation
+
+In addition to the source data, several derived metrics were created to support the business requirements. These include average doctor ratings by specialty, doctors per 100,000 residents, and population-adjusted physician availability by state. These calculated metrics enable fair geographic comparisons, reduce the impact of population differences, and provide more meaningful insights into healthcare accessibility and physician performance.
 
 ## H. Conclusion
 Summarize the outcomes of the project and any potential next steps.
