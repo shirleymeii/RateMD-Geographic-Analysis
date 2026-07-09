@@ -165,7 +165,10 @@ Updated the star schema to better support the project’s business and functiona
 ## E. Methodology and Implementation
 For the project, we used Visual Studio Code for our ETL process for both datasets. We extracted the review data from the dataset provided by the professor, and we used pandas to read the file and understand the columns provided. From there, we dropped the columns not needed and cleaned the data to only represent doctors in the U.S., as it contained data in Canada as well. We used fuzzy matching to ensure that doctors who were likely the same but misspelled slightly differently were recognized as the same. We then had to build out the dimensional tables on Snowflake and load the data there as well. We followed the same process for the population data and uploaded our cleaned data storage back onto our Azure container. From there, we ensured our data was properly exported into Snowflake and connected it to Tableau where we built our visualizations. 
 
-
+**Add methodology for population-adjusted availability**
+A calculated feild was created in order to make the Doctors per 100K visualization in Tableau
+Explain the formula:
+Doctors per 100K = doctor count / population × 100,000
 
 ## F. Visualization
 Provide details of the visualizations created for the project.
