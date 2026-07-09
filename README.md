@@ -221,6 +221,13 @@ The core finding from the analysis: doctor quantity does not equal doctor qualit
 
 **Why it matters.** For the project's stated users (health officials planning clinics, physicians choosing where to practice), this means raw doctor counts alone are misleading. Availability relative to population and rating quality both need to be on the map before any decision.
 
+**Specialty performance varies across medical fields.** The Specialty Analysis visualization shows noticeable differences in average patient ratings between medical specialties. Including review count, knowledge rating, and staff rating provides additional context, making comparisons more reliable and helping identify specialties that consistently receive stronger patient feedback.
+
+**Availability and quality should be evaluated independently.** Combining physician availability with patient ratings demonstrates that healthcare access and healthcare quality answer different questions. A state may have many physicians per capita but only average patient ratings, while another state may receive excellent ratings despite having fewer physicians. Both metrics are necessary to evaluate healthcare performance effectively.
+
+
+
+
 ## H. Conclusion
 Summarize the outcomes of the project and any potential next steps.
 
