@@ -194,10 +194,18 @@ This project produced two Tableau visualizations analyzing doctor availability a
   - Top 10 U.S. States with the Lowest Doctor Density
  <img width="1407" height="906" alt="Top 10 U S  States with Most Doctors" src="https://github.com/user-attachments/assets/5426b91c-b70e-44d8-9ea2-94d179adec9c" />
 
+
+
 **Visual 3 — Specialty Analysis visualization:**
-Added the Specialty Analysis Tableau visualization comparing average patient ratings across medical specialties. This visualization helps identify higher- and lower-performing specialties based on average rating, review count, knowledge rating, and staff rating.
+A vertical bar chart comparing the average patient rating across medical specialties. Additional tooltip metrics—including review count, knowledge rating, and staff rating—provide context for evaluating patient satisfaction and identifying specialties that consistently receive higher or lower ratings.
 
 <img width="791" height="705" alt="Specialty_analysis" src="https://github.com/user-attachments/assets/7513b231-9d6c-4705-ab3a-d488a2051f68" />
+
+
+**Visual 4: Doctor Availability per 100K visualization**
+A horizontal bar chart measuring physician availability by calculating the number of doctors per 100,000 residents in each state. Unlike raw doctor counts, this population-adjusted metric enables fair comparisons across states and helps identify geographic areas with relatively higher or lower physician availability.
+
+<img width="980" height="711" alt="Screenshot 2026-07-09 at 10 11 22 AM" src="https://github.com/user-attachments/assets/991940a2-9b2d-4952-a8a7-3da457805a34" />
 
 
 ## G. Insights
