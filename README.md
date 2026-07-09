@@ -235,9 +235,13 @@ This project delivered a working analytics pipeline that answers two questions a
 
 **What was achieved.** We combined ~1.78 million RateMDs doctor-rating records with U.S. Census population and income data in a Snowflake data warehouse, modeled around a star schema (fact_doctor_rating surrounded by dim_doctor, dim_geography, and dim_specialty). On top of that we built Tableau visualizations: a doctor-density map with State → County → Zip drill-down, a top-10 average-rating-by-state chart, and a doctors-per-population availability metric. The result is a set of views that let a user evaluate both the quality and the availability of physicians, filterable by state, county, and zip.
 
+Expanded the evaluation of physician availability by introducing a population-normalized metric (doctors per 100,000 residents), enabling more meaningful comparisons between states of different population sizes.
+
 **Key outcome.** The analysis showed that doctor quantity does not equal doctor quality — the states with the most doctors (California, New York, Texas) are not the highest-rated, while smaller states like Utah, Idaho, and New Jersey lead on ratings. Availability and quality are separate signals and both have to be measured.
 
 **How the results can be used moving forward.** The dashboard supports real decisions: health officials can spot underserved areas for new clinic placement, physicians can identify regions lacking coverage in their specialty, and patients can compare healthcare access across locations. Future work could extend the analysis to income-vs-quality correlation, add specialty-level breakdowns, and incorporate more recent Census releases as they become available.
+
+Future work could extend the analysis beyond the state level by applying the same population-adjusted methodology to counties and ZIP codes, providing a more granular view of healthcare accessibility and helping identify underserved local communities.
 
 
 ## I. References
