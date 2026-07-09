@@ -187,7 +187,6 @@ Normalizing physician counts by population removes the bias introduced by differ
 ## F. Visualization
 Provide details of the visualizations created for the project.
 
-This project produced two Tableau visualizations analyzing doctor availability and quality across U.S. states.
 
 **Visual 1 — Doctor Density Map:** A choropleth map of the U.S. shading each state by its total number of doctors, with a State → County → Zip drill-down hierarchy. Reveals where physicians are geographically concentrated (California, New York, and Texas hold the most).
 
