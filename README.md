@@ -177,10 +177,6 @@ This project produced two Tableau visualizations analyzing doctor availability a
 **Visual 2 — Average Rating by State:** A horizontal bar chart of average doctor rating per state, filtered to reviewed doctors only and limited to the top 10 highest-rated states.
 
 
-
-
-
-
 **Tool used:** Tableau Cloud, connected live to the Snowflake data warehouse.
 
 **Tableau links:**
@@ -198,7 +194,10 @@ This project produced two Tableau visualizations analyzing doctor availability a
   - Top 10 U.S. States with the Lowest Doctor Density
  <img width="1407" height="906" alt="Top 10 U S  States with Most Doctors" src="https://github.com/user-attachments/assets/5426b91c-b70e-44d8-9ea2-94d179adec9c" />
 
-  
+**Visual 3 — Specialty Analysis visualization:**
+Added the Specialty Analysis Tableau visualization comparing average patient ratings across medical specialties. This visualization helps identify higher- and lower-performing specialties based on average rating, review count, knowledge rating, and staff rating.
+
+<img width="791" height="705" alt="Specialty_analysis" src="https://github.com/user-attachments/assets/7513b231-9d6c-4705-ab3a-d488a2051f68" />
 
 
 ## G. Insights
