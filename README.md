@@ -212,7 +212,7 @@ https://cuny907-my.sharepoint.com/:u:/g/personal/shirley_mei58_login_cuny_edu/IQ
 
   - Top 10 U.S. States with the Lowest Doctor Density
 
-**Visual 3 — Top 11 States by Doctor Count:** A bar chart of the ten states with the largest number of physicians in the dataset, plotted against average state population from DIM_GEOGRAPHY. The labels above each bar report doctors per 100,000 residents. New York, Pennsylvania, and Michigan lead on raw counts, but the per-100K labels show the ranking barely tracks density — Vermonnt has the fewest doctors per capita at 163.76 despite its small population, while Maine, at a comparable size, reaches 174.39. Raw counts follow population; density does not.
+**Visual 3 — Top 10 with lowest Doctor Density:** A bar chart of the ten states with the largest number of physicians in the dataset, plotted against average state population from DIM_GEOGRAPHY. The labels above each bar report doctors per 100,000 residents. New York, Pennsylvania, and Michigan lead on raw counts, but the per-100K labels show the ranking barely tracks density — Vermonnt has the fewest doctors per capita at 163.76 despite its small population, while Maine, at a comparable size, reaches 174.39. Raw counts follow population; density does not.
 
 
 <img width="1407" height="906" alt="Top 10 U S  States with Most Doctors" src="https://github.com/user-attachments/assets/5426b91c-b70e-44d8-9ea2-94d179adec9c" />
