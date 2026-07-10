@@ -199,9 +199,9 @@ A bar chart of average physician rating (AVG(Avg Rating) from FACT_DOCTOR_RATING
 **Tool used:** Tableau Cloud, connected live to the Snowflake data warehouse.
 
 **Tableau links:**
-- Doctor Density Map:
+https://cuny907-my.sharepoint.com/:u:/g/personal/shirley_mei58_login_cuny_edu/IQAwU1hcBWv3SaKNauUsyE7_AbZTYSf-MqInSse5woLgxeY?e=te82D3
 
--  Top 10 U.S. States with the Lowest Doctor Density: https://public.tableau.com/app/profile/shirley.mei3615/viz/RateMDGeographicAnalysis/Top10U_S_StateswithMostDoctors?publish=yes
+
 
 <img width="1354" height="909" alt="Screenshot 2026-07-08 at 6 59 02 PM" src="https://github.com/user-attachments/assets/aee600c4-bce1-43ef-b3e4-5a00a3dada47" />
 
