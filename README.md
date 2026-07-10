@@ -211,17 +211,21 @@ https://cuny907-my.sharepoint.com/:u:/g/personal/shirley_mei58_login_cuny_edu/IQ
 
 
   - Top 10 U.S. States with the Lowest Doctor Density
- <img width="1407" height="906" alt="Top 10 U S  States with Most Doctors" src="https://github.com/user-attachments/assets/5426b91c-b70e-44d8-9ea2-94d179adec9c" />
+
+Visual 3 — Top 10 States by Doctor Count: A bar chart of the ten states with the largest number of physicians in the dataset, plotted against average state population from DIM_GEOGRAPHY. The labels above each bar report doctors per 100,000 residents. New York, Pennsylvania, and Michigan lead on raw counts, but the per-100K labels show the ranking barely tracks density — Rhode Island has the fewest doctors per capita at 143.49 despite its small population, while Maine, at a comparable size, reaches 174.39. Raw counts follow population; density does not.
+
+
+<img width="1407" height="906" alt="Top 10 U S  States with Most Doctors" src="https://github.com/user-attachments/assets/5426b91c-b70e-44d8-9ea2-94d179adec9c" />
 
 
 
-**Visual 3 — Specialty Analysis visualization:**
+**Visual 4 — Specialty Analysis visualization:**
 A vertical bar chart comparing the average patient rating across medical specialties. Additional tooltip metrics—including review count, knowledge rating, and staff rating—provide context for evaluating patient satisfaction and identifying specialties that consistently receive higher or lower ratings.
 
 <img width="791" height="705" alt="Specialty_analysis" src="https://github.com/user-attachments/assets/7513b231-9d6c-4705-ab3a-d488a2051f68" />
 
 
-**Visual 4: Doctor Availability per 100K visualization**
+**Visual 5: Doctor Availability per 100K visualization**
 A horizontal bar chart measuring physician availability by calculating the number of doctors per 100,000 residents in each state. Unlike raw doctor counts, this population-adjusted metric enables fair comparisons across states and helps identify geographic areas with relatively higher or lower physician availability.
 
 <img width="980" height="711" alt="Screenshot 2026-07-09 at 10 11 22 AM" src="https://github.com/user-attachments/assets/991940a2-9b2d-4952-a8a7-3da457805a34" />
