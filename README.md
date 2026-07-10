@@ -188,9 +188,12 @@ Normalizing physician counts by population removes the bias introduced by differ
 Provide details of the visualizations created for the project.
 
 
-**Visual 1 — Doctor Density Map:** A choropleth map of the U.S. shading each state by its total number of doctors, with a State → County → Zip drill-down hierarchy. Reveals where physicians are geographically concentrated (California, New York, and Texas hold the most).
+**Visual 1 — Doctor Density Map:** 
+A choropleth map of the U.S. built on DIM_GEOGRAPHY, with a State → County → Zip Code drill-down hierarchy. Counties are shaded by average population, and each mark's tooltip surfaces CNT(Doctor Id), AVG(Avg Rating), and Doctors per 100K so the raw physician count can be read against the population-adjusted rate. Physicians cluster heavily in California, New York, Texas, and Florida — the same states that dominate raw counts — but the tooltip's per-100K measure shows this concentration largely tracks population rather than genuine oversupply. 22 records could not be geocoded and are excluded from the map.
 
-**Visual 2 — Average Rating by State:** A horizontal bar chart of average doctor rating per state, filtered to reviewed doctors only and limited to the top 10 highest-rated states.
+**Visual 2 — States with Highest Avg Rating Doctors:** 
+
+A bar chart of average physician rating (AVG(Avg Rating) from FACT_DOCTOR_RATING) grouped by State from DIM_GEOGRAPHY, filtered to reviewed doctors only and limited to the ten highest-rated states. Utah leads at 3.93, followed by Idaho (3.91) and New Jersey (3.91); Nevada closes the top ten at 3.73. The spread across the top ten is only 0.20 points, indicating that state-level rating differences are small and unlikely to drive patient choice on their own.
 
 
 **Tool used:** Tableau Cloud, connected live to the Snowflake data warehouse.
